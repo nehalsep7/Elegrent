@@ -58,7 +58,7 @@ public class Splash extends AppCompatActivity {
             @Override
             public void onAnimationEnd(View view) {
                 if(AppUtils.isOnline(getApplicationContext())){
-                    Intent intent = new Intent(Splash.this, MainActivity.class);
+                    Intent intent = new Intent(Splash.this, LoginActivity.class);
                     startActivity(intent);
                 }else{
                     Toast.makeText(Splash.this, " No Internet Connected", Toast.LENGTH_SHORT).show();

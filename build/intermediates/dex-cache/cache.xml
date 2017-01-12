@@ -3,165 +3,165 @@
 
     <item
         is-multidex="false"
-        jar="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
+        jar="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
-        <dex dex="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.0.1_aefd714196d140f3695abf306b13955ebdff294b.jar" />
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.0.1_723c23f36b42157da0ee25f44a5a55b65b3afbd2.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
-        <dex dex="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_924d9a60928ec1e8dcbb1add9e4a8072650d68ee.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
-        <dex dex="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.0.1_56653a81c85969a2d800e3f36f82233c755bf266.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
-        <dex dex="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-10.0.1_56f14d5d527a551c5d92e8405b6009b2da5fa5b7.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
-        <dex dex="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.0.1_10176c2dc68fef43eb620aaf6d55d85048e5cb04.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
-        <dex dex="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_bb4e9fd4e7a37a5a560f5c9bae717906b58e263d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
-        <dex dex="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.0.1_fdda38d1fbb7f97bca55c9506538c804c18f50dd.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
-        <dex dex="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.0.1_5a85c25c02e023b945910adec4e1d891e2cd2fce.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
-        <dex dex="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-10.0.1_9d2b9db92729ba43b2e37515341f97f0ee6c9774.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.4.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="a07818a1ecabdb149998823429cce555af4b9cba">
-        <dex dex="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/pre-dexed/debug/com.jakewharton-butterknife-8.4.0_d6cae9e04f92931a83e1c39e72f91bd5dac02e9a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
-        <dex dex="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.0.1_c15f1784d43defd23d9a18ccf6bedc0f5400587e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
-        <dex dex="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.0.1_2400da73d6c3f81908c34b233602bd7f194742cf.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/10.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="44a694d4095be84c2888764b1f7256b385c030ad">
-        <dex dex="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-location-10.0.1_46f1473bc770939e450b851a759dd2134da2995d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
+        jar="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.0.1_da5e995bb30a4f59c6068e60d33c65c1b5c86e54.jar" />
+        <dex dex="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.0.1_78190a0e67bfb320c3d690299e6370064d5b8f32.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
+        jar="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
-        <dex dex="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.0.1_dfac00d5fdd9ae7bd2b6e2c02d7190e1cb7778e0.jar" />
+        <dex dex="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.0.1_af95fb74df63a25b96a8e7b9c689374fb7d42984.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jar="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
-        <dex dex="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_4a9a8d07973fb7bdce8af6b423b6ac5f65861475.jar" />
+        <dex dex="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_02a2c79d3138825f40e1ccd53aa4b392c00c18ca.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
+        jar="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.0.1_16d9e784d991bdd45a2d85ce108b809eabe44f4e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
+        <dex dex="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.0.1_6bc7b98a2906cd9d1215fb1add859c8a83d2999d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_3fc9510da25d829a9c3bd366024924d22c6cf247.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-10.0.1_862156376b43d6803a79fd9914ca1840c6f5e58e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_63d851d18095a307b7f40b1fb701dbfea7820840.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.0.1_b596b4279ed56497c00d232c8f6d8dad60fc25db.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
-        <dex dex="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.0.1_c689a89bc0d580411c9899f88c6ca4696c8b50b1.jar" />
+        <dex dex="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.0.1_5460b05abe2f7fa19315eada696fc228aefdf752.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
+        jar="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
-        <dex dex="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.0.1_38cb335516d615f53d2bb54b71216621eb11f67d.jar" />
+        <dex dex="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.0.1_bf558d7966a86eb5f21e11c9f4720e53322129bf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_01da8f77f95ef3618b8cd58a4af7c09b6a7462bd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="44a694d4095be84c2888764b1f7256b385c030ad">
+        <dex dex="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-location-10.0.1_7899df93918158399223a5a16e1f9ce3e4c0636e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.0.1_6c4c38813bb0dcdda6b9171559de2e08d4c4a6d2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.0.1_df0c0abacbc5f61f5fc75e08beeb4321fc506d8f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_600360955a808a6feedfbb0a15f5292cc147d408.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.0.1_189e31a519631950faf79251dbc691e605e87495.jar" />
     </item>
     <item
         is-multidex="false"
@@ -170,43 +170,34 @@
         optimize="true"
         revision="25.0.0"
         sha1="ea392375cf9ff59234a82e7928a204215ccc98cd">
-        <dex dex="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/pre-dexed/debug/butterknife-annotations-8.4.0_4c0ae1a4359490d57877d10f0369186608e2d713.jar" />
+        <dex dex="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/pre-dexed/debug/butterknife-annotations-8.4.0_4c0ae1a4359490d57877d10f0369186608e2d713.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="f83b00041ecfba705603fec40363416c7de69719">
-        <dex dex="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_02e8cc781e445337267033e585b229e59c507ed2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
-        <dex dex="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.0.1_61200e05ecaf4d62bf46099e43e047f1994b0aba.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_5a6b64028316ca1ef056dc52ff7258b2c065cf44.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.0.1/jars/classes.jar"
+        jar="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.0.1/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
-        <dex dex="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-10.0.1_fbf62f20e8e266f5449c84be59928d6d6a7ea7d3.jar" />
+        <dex dex="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-10.0.1_e32723a483c62283e418edc0313d59cd405b3fbc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a07818a1ecabdb149998823429cce555af4b9cba">
+        <dex dex="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/pre-dexed/debug/com.jakewharton-butterknife-8.4.0_97977f52ec94d2cb302ecc7c45f18d711f163684.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.0.1_7b590196fba0d3e7107ebd9825ebdbe35fa51f9f.jar" />
     </item>
     <item
         is-multidex="false"
@@ -215,7 +206,16 @@
         optimize="true"
         revision="25.0.0"
         sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
-        <dex dex="/home/nehal/AndroidStudioProjects/Elegrent/app/build/intermediates/pre-dexed/debug/support-annotations-25.0.1_c2204802b734e3967eb93ed21cadc79f3f906cbf.jar" />
+        <dex dex="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/pre-dexed/debug/support-annotations-25.0.1_c2204802b734e3967eb93ed21cadc79f3f906cbf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="/home/nehal/AndroidStudioProjects/elegrent/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-10.0.1_02946d78d12f4aae1a154c96b6c656ffd725cc55.jar" />
     </item>
 
 </items>

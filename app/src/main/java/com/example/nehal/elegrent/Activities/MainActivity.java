@@ -20,6 +20,8 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,12 +38,13 @@ import java.util.List;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener,GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, LocationListener {
+        implements NavigationView.OnNavigationItemSelectedListener,GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, LocationListener,View.OnClickListener {
 
     private GoogleApiClient mGoogleApiClient;
     private LocationRequest mLocationRequest;
     private TextView userLocationTv;
     private static final int REQUEST_ID_MULTIPLE_PERMISSIONS = 1;
+    private LinearLayout locationLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,6 +53,7 @@ public class MainActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
         initViews();
         checkAndRequestPermissions();
+        setClickListeners();
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -63,6 +67,10 @@ public class MainActivity extends AppCompatActivity
 
     private void initViews() {
         userLocationTv = (TextView)findViewById(R.id.userLocationTv);
+        locationLayout = (LinearLayout)findViewById(R.id.locationLayout);
+    }
+    private void setClickListeners(){
+        locationLayout.setOnClickListener(this);
     }
 
 
@@ -131,13 +139,6 @@ public class MainActivity extends AppCompatActivity
         mLocationRequest.setInterval(1000);
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             checkAndRequestPermissions();
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
             return;
         }
         LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient, mLocationRequest, this);
@@ -167,7 +168,7 @@ public class MainActivity extends AppCompatActivity
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         switch (requestCode){
             case REQUEST_ID_MULTIPLE_PERMISSIONS:
-                if(grantResults.length >0 && (grantResults[0] == PackageManager.PERMISSION_GRANTED || grantResults[1] == PackageManager.PERMISSION_GRANTED)){
+                if(grantResults.length > 0 && (grantResults[0] == PackageManager.PERMISSION_GRANTED || grantResults[1] == PackageManager.PERMISSION_GRANTED)){
                     Log.i("Permission Granted","Permission Granted");
                     if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED || ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED){
                         LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient, mLocationRequest, this);
@@ -202,12 +203,15 @@ public class MainActivity extends AppCompatActivity
             addresses = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1); // Here 1 represent max location result to returned, by documents it recommended 1 to 5
             String address = addresses.get(0).getAddressLine(0); // If any additional address line present than only, check with max available address lines by getMaxAddressLineIndex()
             String city = addresses.get(0).getLocality();
-            String state = addresses.get(0).getAdminArea();
-            String country = addresses.get(0).getCountryName();
-            String postalCode = addresses.get(0).getPostalCode();
-            String knownName = addresses.get(0).getFeatureName();
-            Log.i("Location",city + " "+state + " "+ country + " "+ knownName + " "+addresses.get(0).getAdminArea()+ " "+addresses.get(0).getFeatureName()+ " "+addresses.get(0).getPremises()+ " "+addresses.get(0).getSubAdminArea() + " "+ addresses.get(0).getSubLocality());
-            userLocationTv.setText(addresses.get(0).getSubLocality() + ", "+city);
+//            String state = addresses.get(0).getAdminArea();
+//            String country = addresses.get(0).getCountryName();
+//            String postalCode = addresses.get(0).getPostalCode();
+//            String knownName = addresses.get(0).getFeatureName();
+//            Log.i("Location",city + " "+state + " "+ country + " "+ knownName + " "+addresses.get(0).getAdminArea()+ " "+addresses.get(0).getFeatureName()+ " "+addresses.get(0).getPremises()+ " "+addresses.get(0).getSubAdminArea() + " "+ addresses.get(0).getSubLocality());
+            userLocationTv.setText(city);
+            if(!city.equalsIgnoreCase("bengaluru")){
+                Toast.makeText(this, "We currently provide services only in Bangalore", Toast.LENGTH_SHORT).show();
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -225,4 +229,13 @@ public class MainActivity extends AppCompatActivity
         super.onStop();
     }
 
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.locationLayout:
+
+                break;
+
+        }
+    }
 }
