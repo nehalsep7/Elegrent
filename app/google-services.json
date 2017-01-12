@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "556488219373",
+    "project_id": "firebase-elegrent"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:556488219373:android:276f5cd0df266b67",
+        "android_client_info": {
+          "package_name": "com.example.nehal.elegrent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "556488219373-3ttmd04cfe0j1bheumlmeikati3dutik.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nehal.elegrent",
+            "certificate_hash": "14045B1C3887133E09995C285D6CEE328BFC44EE"
+          }
+        },
+        {
+          "client_id": "556488219373-4ok0nopulin5jff6nuheol9971glbbaj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0saa_HDw9f2nJOqgjfdYH6zfzuet-dug"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

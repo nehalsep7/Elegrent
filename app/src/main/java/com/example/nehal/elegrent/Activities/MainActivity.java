@@ -6,6 +6,7 @@ import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -21,13 +22,26 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.example.nehal.elegrent.R;
+import com.facebook.AccessToken;
+import com.facebook.AccessTokenTracker;
+import com.facebook.FacebookSdk;
+import com.facebook.Profile;
+import com.facebook.ProfileTracker;
+import com.facebook.appevents.AppEventsLogger;
+import com.facebook.login.LoginManager;
+import com.google.android.gms.auth.api.Auth;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.common.api.ResultCallback;
+import com.google.android.gms.common.api.Status;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
@@ -41,33 +55,69 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, LocationListener,View.OnClickListener {
 
     private GoogleApiClient mGoogleApiClient;
+    private GoogleApiClient mGoogleApiClientLogin;
     private LocationRequest mLocationRequest;
     private TextView userLocationTv;
     private static final int REQUEST_ID_MULTIPLE_PERMISSIONS = 1;
     private LinearLayout locationLayout;
+    private String userName;
+    private TextView userNameTv;
+    private DrawerLayout drawer;
+    private ImageView userImage;
+    private Uri userImageUrl;
+    private ProfileTracker profileTracker;
+    private  AccessTokenTracker accessTokenTracker;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        FacebookSdk.sdkInitialize(getApplicationContext());
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        initViews();
         checkAndRequestPermissions();
-        setClickListeners();
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
-
+        initViews();
+        setClickListeners();
+        AppEventsLogger.activateApp(this);
+        trackFbProfile();
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         mGoogleApiClient = new GoogleApiClient.Builder(this).addApi(LocationServices.API).addOnConnectionFailedListener(this).addConnectionCallbacks(this).build();
+        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestEmail()
+                .requestProfile()
+                .build();
+        mGoogleApiClientLogin = new GoogleApiClient.Builder(this)
+                .enableAutoManage(this /* FragmentActivity */, this /* OnConnectionFailedListener */)
+                .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
+                .build();
+        getDataFromIntent();
+        if(userImageUrl != null){
+            Glide.with(this).load(userImageUrl).into(userImage);
+        }
+    }
+
+    private void getDataFromIntent() {
+        userName = getIntent().getStringExtra("UserName");
+        userNameTv.setText(userName);
+        if(getIntent().getStringExtra("UserPhoto") != null){
+            userImageUrl = Uri.parse(getIntent().getStringExtra("UserPhoto"));
+        }
+
     }
 
     private void initViews() {
         userLocationTv = (TextView)findViewById(R.id.userLocationTv);
         locationLayout = (LinearLayout)findViewById(R.id.locationLayout);
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        View hView =  navigationView.getHeaderView(0);
+        userNameTv = (TextView)hView.findViewById(R.id.userNameTv);
+        userImage = (ImageView)hView.findViewById(R.id.userImage);
+       // userNameTv = (TextView)drawer.findViewById(R.id.userNameTv);
     }
     private void setClickListeners(){
         locationLayout.setOnClickListener(this);
@@ -125,6 +175,8 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_living) {
 
+        }else if(id == R.id.logout){
+            logoutUser();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -132,11 +184,37 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+    private void logoutUser() {
+        if (mGoogleApiClientLogin.isConnected()) {
+            Auth.GoogleSignInApi.signOut(mGoogleApiClientLogin).setResultCallback(
+                    new ResultCallback<Status>() {
+                        @Override
+                        public void onResult(Status status) {
+                            if(status.isSuccess()){
+                                Log.i("Success","Logout Success");
+                                LoginManager.getInstance().logOut();
+                                mGoogleApiClientLogin.disconnect();
+                                finish();
+                            }
+                            // [START_EXCLUDE]
+                            //updateUI(false);
+                            // [END_EXCLUDE]
+                        }
+                    });
+        }else{
+            LoginManager.getInstance().logOut();
+            finish();
+        }
+
+
+
+    }
+
     @Override
     public void onConnected(@Nullable Bundle bundle) {
         mLocationRequest = LocationRequest.create();
         mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
-        mLocationRequest.setInterval(1000);
+        mLocationRequest.setInterval(600000);
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             checkAndRequestPermissions();
             return;
@@ -237,5 +315,32 @@ public class MainActivity extends AppCompatActivity
                 break;
 
         }
+    }
+    private void trackFbProfile() {
+        profileTracker = new ProfileTracker() {
+            @Override
+            protected void onCurrentProfileChanged(
+                    Profile oldProfile,
+                    Profile currentProfile) {
+                Log.i("Profile:","Changed");
+                //currentProfile.getName();
+
+                // App code
+            }
+        };
+        accessTokenTracker = new AccessTokenTracker() {
+            @Override
+            protected void onCurrentAccessTokenChanged(
+                    AccessToken oldAccessToken,
+                    AccessToken currentAccessToken) {
+                Log.i("Token:","Changed");
+                // Set the access token using
+                // currentAccessToken when it's loaded or set.
+            }
+        };
+        // If the access token is available already assign it.
+        AccessToken accessToken = AccessToken.getCurrentAccessToken();
+        profileTracker.startTracking();
+        accessTokenTracker.startTracking();
     }
 }
